@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Engineer</title>
+    <link rel="shortcut icon" href="./img/bochi.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Elias Espinoza <span style="color: #2E236C;">Estudiante de Ingenieria</span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="sobreMi.html">Sobre Mi</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <section class="seccion01">
+        <p class="difuminado"><span class="texto">Trabajos de clase</span></p>
+    </section>
+
+    <div class="dropdown">
+        <button class="dropbtn">Seleccionar seccion de trabajos hechos en clase</button>
+        <div class="dropdown-content">
+            <a href="css.html">CSS</a>
+            <a href="js.html">JS</a>
+            <a href="gridflex.html">Grid/Flex</a>
+        </div>
+    </div>
+
+    <hr>
+
+    
+
+    <section>
+        <h2 class="profesion">Contacto</h2>
+        <form action="./php/registrar.php" class="formulario" method="post">
+            <fieldset>
+                <legend>Contactame llenando todos los campos</legend>
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input name="nombre" class="input-text" type="text" placeholder="Tu Nombre">
+                    </div>
+
+                    <div class="campo">
+                        <label>Teléfono</label>
+                        <input name="tel" class="input-text" type="tel" placeholder="Tu Teléfono">
+                    </div>
+
+                    <div class="campo">
+                        <label>Correo</label>
+                        <input name="correo" class="input-text" type="email" placeholder="Tu Email">
+                    </div>
+
+                    <div class="campo">
+                        <label>Mensaje</label>
+                        <textarea name="mensaje" class="input-text text-area"></textarea>
+                    </div>
+                </div> <!-- .contenedor-campos -->
+
+                <div class="alinear-derecha flex">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <?php
+
+    if(isset($_POST['Enviar'])){
+        $nombre = $_POST['nombre'];
+        $tel = $_POST['tel'];
+        $correo = $_POST['correo'];
+        $mensaje = $_POST['mensaje'];
+
+        $insertDatos = "INSERT INTO table1 VALUES ('', '$nombre' $tel, '$correo', '$mensaje')";
+
+        $ejecutarInsertar = mysqli_query ($enlace,$insertDatos);
+    }
+
+    ?>
+                   
+                  
+    <h3 style="border: 2px solid blue; border-radius: 15px;border-top: 5px solid purple;">CopyRight</h3>
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados. Elias Espinoza - Estudiante de Ingenieria</p>
+    </footer>
+</body>
+
+</html>

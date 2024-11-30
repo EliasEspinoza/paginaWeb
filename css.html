@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="shortcut icon" href="./img/bochi.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/CSS.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Elias Espinoza <span style="color: #2E236C;">Estudiante de Ingenieria</span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="sobreMi.html">Sobre Mi</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <section class="seccion01">
+        <p class="difuminado"><span class="texto">10 Trabajos en CSS</span></p>
+    </section>
+
+    <section>
+        <h1>1. Voltear Tarjetas</h1>
+        <div class="cards">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/profile1.jpg" alt="Avatar" style="width: 300px; height: 300px" />
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/profile2.jpg" alt="Avatar" style="width: 300px; height: 300px" />
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/profile3.jpg" alt="Avatar" style="width: 300px; height: 300px" />
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>2. Tablas de precios</h1>
+        <div class="price-table-container">
+            <div class="table">
+                <div class="title">Startup Plan</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="number">69</span>
+                    <span class="frequency">/mo</span>
+                </div>
+                <div class="features">
+                    <ul>
+                        <li>
+                            <span class="material-icons check_circle"> check_circle </span>Easy access
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle"> check_circle </span>Easy access
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle"> check_circle </span>Easy access
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle"> check_circle </span>Easy access
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle"> check_circle </span>Easy access
+                        </li>
+                    </ul>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn">Try for free</a>
+                </div>
+            </div>
+
+            <div class="table recommended">
+                <div class="title">Pro Agent</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="number">69</span>
+                    <span class="frequency">/mo</span>
+                </div>
+                <div class="features">
+                    <ul>
+                        <li>Billed anually</li>
+                        <li>Billed anually</li>
+                        <li>Billed anually</li>
+                        <li>Billed anually</li>
+                    </ul>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn recommended">Try for free</a>
+                </div>
+            </div>
+
+            <div class="table">
+                <div class="title">Enterprise</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="number">69</span>
+                    <span class="frequency">/mo</span>
+                </div>
+                <div class="features">
+                    <ul>
+                        <li>Billed anually</li>
+                        <li>Billed anually</li>
+                    </ul>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn">Try for free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>3. Formulario</h1>
+        <div class="form-container">
+            <div class="login-container">
+                <h2>Welcome</h2>
+                <p>Select the authentication method</p>
+                <form action="">
+                    <p>
+                        <label for="username">Username</label>
+                        <input class="input" type="text" name="username" />
+                    </p>
+
+                    <p>
+                        <label for="password">Password</label>
+                        <input class="input" type="password" name="password" />
+                    </p>
+
+                    <div class="options">
+                        <div>
+                            Remember me <input type="checkbox" name="remeberme" id="" />
+                        </div>
+                        <div>
+                            <a href="#">Olvide mi password</a>
+                        </div>
+                    </div>
+
+                    <p>
+                        <input class="btn btn-login" type="submit" value="Iniciar sesión" />
+                    </p>
+                    <div class="providers">
+                        <span>Otros métodos para hacer login</span>
+                        <button class="btn google-provider">Google</button>
+                        <button class="btn facebook-provider">Facebook</button>
+                        <button class="btn twitter-provider">Twitter</button>
+                    </div>
+                </form>
+            </div>
+            <div class="welcome-screen-container"></div>
+        </div>
+    </section>
+    <section>
+        <h1>4. Barra de progreso</h1>
+        <div class="progressbar-container">
+            <div class="outer-box">
+                <div class="inner-box">50%</div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="80" stroke-linecap="round" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>5. Checkboxes</h1>
+        <label class="checkbox-container"
+        >Soy un checkbox
+        <input type="checkbox" />
+        <span class="checkmark">
+            <span class="material-icons">check</span>
+        </span>
+        </label>
+
+        <label class="checkbox-container"
+        >Soy un radio button
+        <input type="radio" name="a" />
+        <span class="checkmark radio">
+            <div class="circle"></div>
+        </span>
+        </label>
+        <label class="checkbox-container"
+        >Soy un radio button
+        <input type="radio" name="a" />
+        <span class="checkmark radio">
+            <div class="circle"></div>
+        </span>
+        </label>
+        
+    </section>
+    <section>
+        <h1>6. Comentarios</h1>
+        <div class="comments-container">
+            <div class="comment">
+                <div class="comment-wrapper">
+                    <div class="content">
+                        <div class="user-photo">
+                            <img src="img/profile1.jpg" alt="" width="50" />
+                        </div>
+                        <div class="comment-info">
+                            <div class="header">
+                                <span class="username">@vidamrr</span>
+                                <span class="date">5hrs ago</span>
+                            </div>
+                            <div class="text">Este es un comentario</div>
+                            <div class="actions">
+                                <button>Like</button>
+                                <button>Reply</button>
+                                <button>Share</button>
+                                <button>Follow</button>
+                                <button>Report</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="replies">
+                        <div class="comment">
+                            <div class="line"></div>
+                            <div class="comment-wrapper">
+                                <div class="content">
+                                    <div class="user-photo">
+                                        <img src="img/profile2.jpg" alt="" width="50" />
+                                    </div>
+                                    <div class="comment-info">
+                                        <div class="header">
+                                            <span class="username">@vidamrr</span>
+                                            <span class="date">5hrs ago</span>
+                                        </div>
+                                        <div class="text">Este es un comentario</div>
+                                        <div class="actions">
+                                            <button>Like</button>
+                                            <button>Reply</button>
+                                            <button>Share</button>
+                                            <button>Follow</button>
+                                            <button>Report</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="line"></div>
+                            <div class="comment-wrapper">
+                                <div class="content">
+                                    <div class="user-photo">
+                                        <img src="img/profile3.jpeg" alt="" width="50" />
+                                    </div>
+                                    <div class="comment-info">
+                                        <div class="header">
+                                            <span class="username">@vidamrr</span>
+                                            <span class="date">5hrs ago</span>
+                                        </div>
+                                        <div class="text">Este es un comentario</div>
+                                        <div class="actions">
+                                            <button>Like</button>
+                                            <button>Reply</button>
+                                            <button>Share</button>
+                                            <button>Follow</button>
+                                            <button>Report</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-wrapper">
+                    <div class="content">
+                        <div class="user-photo">
+                            <img src="img/profile2.jpg" alt="" width="50" />
+                        </div>
+                        <div class="comment-info">
+                            <div class="header">
+                                <span class="username">@vidamrr</span>
+                                <span class="date">5hrs ago</span>
+                            </div>
+                            <div class="text">Este es un comentario</div>
+                            <div class="actions">
+                                <button>Like</button>
+                                <button>Reply</button>
+                                <button>Share</button>
+                                <button>Follow</button>
+                                <button>Report</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="replies">
+                        <div class="comment">
+                            <div class="line"></div>
+                            <div class="comment-wrapper">
+                                <div class="content">
+                                    <div class="user-photo">
+                                        <img src="img/profile3.jpeg" alt="" width="50" />
+                                    </div>
+                                    <div class="comment-info">
+                                        <div class="header">
+                                            <span class="username">@vidamrr05</span>
+                                            <span class="date">5hrs ago</span>
+                                        </div>
+                                        <div class="text">Este es un comentario</div>
+                                        <div class="actions">
+                                            <button>Like</button>
+                                            <button>Reply</button>
+                                            <button>Share</button>
+                                            <button>Follow</button>
+                                            <button>Report</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="line"></div>
+                            <div class="comment-wrapper">
+                                <div class="content">
+                                    <div class="user-photo">
+                                        <img src="img/profile3.jpg" alt="" width="50" />
+                                    </div>
+                                    <div class="comment-info">
+                                        <div class="header">
+                                            <span class="username">@vidamrr06</span>
+                                            <span class="date">5hrs ago</span>
+                                        </div>
+                                        <div class="text">Este es un comentario</div>
+                                        <div class="actions">
+                                            <button>Like</button>
+                                            <button>Reply</button>
+                                            <button>Share</button>
+                                            <button>Follow</button>
+                                            <button>Report</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>7. Personas</h1>
+        <div class="personas-container">
+            <div class="persona">
+                <img src="img/profile1.jpg" alt="" />
+                <span class="name">
+                    <span class="text"> Walter White</span>
+                </span>
+            </div>
+            <div class="persona">
+                <img src="img/profile2.jpg" alt="" />
+                <span class="name">
+                    <span class="text"> Saul Goodman</span>
+                </span>
+            </div>
+            <div class="persona">
+                <img src="img/profile3.jpg" alt="" />
+                <span class="name">
+                    <span class="text"> Dean Wincherter</span>
+                </span>
+            </div>
+            <div class="persona">
+                <img src="img/profile4.jpeg" alt="" />
+                <span class="name">
+                    <span class="text"> Sakata Gintoki</span>
+                </span>
+            </div>
+            <div class="persona">
+                <img src="img/profile5.jpeg" alt="" />
+                <span class="name">
+                    <span class="text"> Dexter Morgan</span>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>8. Chats Whatsapp</h1>
+        <div class="chat-container">
+            <div class="bubble-container right">
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div>
+                            <span> Hola, soy una burbuja</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div>
+                            <span> Hola, soy una burbuja</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div>
+                            <span> Hola, soy una burbuja jsjsjsjsj</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bubble-container left">
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div>
+                            <span> Ho</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div class="content">
+                            <span> Hola, soy una burbuja efa ear fawera</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>9. Tabla</h1>
+        <table>
+            <caption>Mi primera tabla</caption>
+            <thead>
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 2</th>
+                    <th>Titulo 3</th>
+                    <th>Titulo 4</th>
+                    <th>Titulo 5</th>
+                    <th>Titulo 6</th>
+                    <th>Titulo 7</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elias Espinoza</td>
+                    <td>Mexico</td>
+                    <td>$250,000</td>
+                    <td>$5000</td>
+                    <td>92.66</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>$4,000,000</td>
+                    <td>$80,000</td>
+                    <td>1,482,56</td>
+                    <td>96</td>
+                    <td>0</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </section>
+
+    <section>
+        <h1>10. Slider</h1>
+        <div class="slider-container">
+            <div class="slider-viewport">
+                <div class="slide" id="slide1">1</div>
+                <div class="slide" id="slide2">2</div>
+                <div class="slide" id="slide3">3</div>
+                <div class="slide" id="slide4">4</div>
+            </div>
+            <div class="links">
+                <a href="#slide1">1</a>
+                <a href="#slide2">2</a>
+                <a href="#slide3">3</a>
+                <a href="#slide4">4</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>Todos los derechos reservados. Elias Espinoza - Estudiante de Ingenieria</p>
+    </footer>
+</body>
+
+</html>
